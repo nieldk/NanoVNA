@@ -30,7 +30,8 @@ endif
 
 # Enable this if you want link time optimizations (LTO)
 ifeq ($(USE_LTO),)
-  USE_LTO = no
+  # Enabling this, frees more memory for use
+  USE_LTO = yes
 endif
 
 # If enabled, this option allows to compile the application in THUMB mode.
